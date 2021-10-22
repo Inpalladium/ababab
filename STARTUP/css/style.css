@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+  .container {
+    width: 100%;
+    max-width: 1340px;
+	  margin: 0 auto;
+
+  }
+  .header {
+    background: url(../img/fon2.jpg) no-repeat center top/cover ;
+    min-height: 740px;
+    position: relative;
+  }
+
+  header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+
+  .header-menu-inner {
+      display: flex;
+      
+  }
+
+  .header-menu__item {
+      display: inline-block;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+      z-index: 3;
+      font-size: 18px;
+      transition: all .2s ease-in-out;
+  }
+
+  .header-menu__item:after {
+    display: block; 
+    content: ""; 
+    height: 1px; 
+    width: 0%; 
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+  }
+
+.header-menu__item:hover:after,
+.header-menu__item:focus:after {
+width: 100%;
+}
+.header-logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.header-logo {
+    z-index: 3;
+    margin-left: 40px;
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.header-menu {
+  z-index: 3;
+}
+
+.intro__title {
+    margin-top: 230px;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    z-index: 3;
+}
+
+.intro__title h4 {
+    font-weight: 500;
+}
+
+.intro__subtitle {
+    color: white;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 65px;
+    z-index: 3;
+}
+
+.btn {
+    padding: 18px 34px 18px 34px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+
+    
+}
+
+.aaa {
+  z-index: 3;
+}
+
+.btn:hover {
+background-color: white;
+transition: all 300ms ease-in-out;
+color: #c0301c;;
+
+    
+}
+
+.logo-container {
+  border-radius: 50%;
+  border: 1px solid rgb(88, 88, 88);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 90px;
+  height: 90px;
+  transition: all 200ms ease-in-out;
+  
+}
+
+.rollover { 
+  font-size: 40px;
+  color: #c0301c;
+  padding: 28px 28px 28px 28px;
+}
+
+
+.rollover:hover {
+  color: white;
+  padding: 28px 28px 28px 28px;
+ }
+
+ .logo-container:hover {
+   background-color: #c0301c;;
+   transition: all 200ms ease-in-out;
+   color: white;
+   border: none;
+   font-size: 41px;
+ }
+
+.services__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 135px;
+}
+
+ .services__top__title {
+   font-weight: 500;
+   font-size: 22px;
+   text-transform: uppercase;
+   color: rgb(88, 88, 88);
+
+ }
+
+ .swarp {
+   content:"";
+   width: 65px;
+   height: 4px;
+   background-color: rgb(66, 66, 66);
+   margin: 26px 0;
+ }
+
+ .services__top__subtitle{
+   font-size: 18px;
+   color: rgb(88, 88, 88);
+ }
+
+ .services__bottom__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 370px;
+   margin-bottom: 50px;
+ }
+
+ .services__bottom {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 110px;
+ }
+
+ .services__bottom__title {
+   font-weight: 500;
+   font-size: 18px;
+   margin: 30px 0;
+   color: rgb(88, 88, 88);
+ }
+
+ .services__bottom__subtitle {
+   font-size: 16px;
+   display: flex;
+   text-align: center;
+   color: rgb(88, 88, 88);
+ }
+
+.footer {
+  background-color: #c0301c;;
+}
+
+ .znachki__container {
+  border-radius: 50%;
+  border: 1px solid white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 45px;
+  height: 45px;
+  transition: all 200ms ease-in-out;
+  margin-top: 110px;
+  margin-bottom: 65px;
+  margin-left: 30px;
+  
+ }
+
+ .first__znachki__container {
+  margin-left: 0;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 110px;
+}
+
+ .chach {
+  font-size: 25px;
+  color: white;
+  padding: 15px;
+ }
+
+ .chach:hover {
+   color: #c0301c;
+ }
+
+.znachki {
+  display: flex;
+
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+.znachki__container:hover {
+  background-color: white;;
+  transition: all 200ms ease-in-out;
+  color: #c0301c;
+  border: none;
+  font-size: 25px;
+  
+}
+
+@media screen and (max-width: 576px) {
+  .header-top {
+      justify-content: center;
+  }
+  .header-menu {
+      display: none;
+  }
+  .main-views {
+      justify-content: center;
+  }
+}
